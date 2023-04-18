@@ -42,9 +42,32 @@ const score: (string | number | boolean)[] = [
 // ******** TUPLES ******** //
 let mine: [number, string];
 mine = [123, "Jhon"]; // correct
-mine[0] = [123]; //error
+// mine[0] = [123]; //error
 mine[0] = 123; //correctresult
-mine[0] = [123, "Jhon"]; //error
+// mine[0] = [123, "Jhon"]; //error
 
 let result: [string, number, string, number];
 result = ["Math", 1, "Phy", 2];
+
+// ******** OBJECT ******** //
+let employee: object;
+
+employee = {
+  firstName: "Jhon",
+  lastName: "Doe",
+  age: 25,
+};
+
+// employee = "HI"; // string is not assignable to type object
+
+let student: {
+  firstName: string;
+  lastName: string;
+  age: number;
+  isPassed: boolean;
+} = {
+  firstName: "Peter",
+  lastName: "Dow",
+  age: 25,
+  isPassed: true,
+};
